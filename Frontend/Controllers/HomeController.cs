@@ -24,7 +24,7 @@ namespace Frontend.Controllers
                 {
                     string data = await response.Content.ReadAsStringAsync();
 
-                    employees = JsonConvert.DeserializeObject<List<Employee>>(data);
+                    employees = JsonConvert.DeserializeObject<List<Employee>>(data) ?? new List<Employee>();
                 }
             }
             return View(employees);
