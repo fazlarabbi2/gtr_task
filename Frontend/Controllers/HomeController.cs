@@ -6,6 +6,7 @@ using System.Diagnostics;
 
 namespace Frontend.Controllers
 {
+    
     public class HomeController(ILogger<HomeController> logger) : Controller
     {
         private readonly string apiBaseUrl = "https://localhost:7001/api/";
